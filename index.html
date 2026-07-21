@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<!--
+    Laboratorio de HTML5
+    Estudiante: Marieangieliz González de Jesús
+
+    CARACTERÍSTICAS PRINCIPALES DE HTML5:
+
+    1. Utiliza etiquetas semánticas como header, nav, main,
+       section, article y footer.
+
+    2. Las etiquetas semánticas describen claramente la función
+       de cada parte de la página.
+
+    3. HTML5 permite integrar audio y video sin depender de
+       programas externos.
+
+    4. Facilita la organización, accesibilidad y mantenimiento
+       del contenido.
+
+    5. El código resulta más fácil de interpretar para los
+       navegadores, desarrolladores y motores de búsqueda.
+-->
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Laboratorio sobre la estructura básica de HTML5"
+    >
+
+    <title>Laboratorio de HTML5</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Introducción a HTML5</h1>
+
+        <p>
+            Laboratorio sobre la estructura básica y semántica
+            de una página web.
+        </p>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#html">HTML</a>
+            </li>
+
+            <li>
+                <a href="#semantica">Semántica</a>
+            </li>
+
+            <li>
+                <a href="#multimedia">Multimedia</a>
+            </li>
+
+            <li>
+                <a href="#ventajas">Ventajas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="html">
+            <h2>Sintaxis básica de HTML</h2>
+
+            <p>
+                HTML significa HyperText Markup Language. Se utiliza
+                para crear y organizar el contenido de una página web.
+            </p>
+
+            <p>
+                Los elementos normalmente contienen una etiqueta de
+                apertura, contenido y una etiqueta de cierre.
+            </p>
+
+            <h3>Ejemplos de etiquetas</h3>
+
+            <ul>
+                <li>&lt;h1&gt; crea un encabezado principal.</li>
+                <li>&lt;p&gt; crea un párrafo.</li>
+                <li>&lt;ul&gt; crea una lista sin orden.</li>
+                <li>&lt;ol&gt; crea una lista ordenada.</li>
+                <li>&lt;a&gt; crea un enlace.</li>
+            </ul>
+
+            <h3>Ejemplo de atributo</h3>
+
+            <p>
+                En el siguiente enlace, <strong>href</strong> es el
+                atributo y la dirección web es su valor:
+            </p>
+
+            <a
+                href="https://developer.mozilla.org/es/docs/Web/HTML"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visitar un recurso para aprender HTML
+            </a>
+        </section>
+
+        <section id="semantica">
+            <h2>Semántica de HTML5</h2>
+
+            <article>
+                <h3>¿Qué es la semántica?</h3>
+
+                <p>
+                    La semántica se refiere al significado de cada
+                    elemento. Las etiquetas semánticas indican qué
+                    función cumple una sección dentro de la página.
+                </p>
+            </article>
+
+            <article>
+                <h3>Elementos semánticos utilizados</h3>
+
+                <ol>
+                    <li>Header: representa el encabezado.</li>
+                    <li>Nav: contiene los enlaces de navegación.</li>
+                    <li>Main: contiene el contenido principal.</li>
+                    <li>Section: divide el contenido por temas.</li>
+                    <li>Article: contiene información independiente.</li>
+                    <li>Footer: representa el pie de página.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="multimedia">
+            <h2>Características multimedia de HTML5</h2>
+
+            <figure>
+                <img
+                    src="imagenes/desarrollo-web.jpg"
+                    alt="Computadora utilizada para desarrollar una página web"
+                >
+
+                <figcaption>
+                    Imagen relacionada con el desarrollo web.
+                </figcaption>
+            </figure>
+
+            <article>
+                <h3>Elemento de audio</h3>
+
+                <p>
+                    HTML5 permite reproducir audio directamente desde
+                    el navegador.
+                </p>
+
+                <audio controls>
+    <source src="audio/audio-html.m4a" type="audio/mp4">
+    Tu navegador no puede reproducir este audio.
+</audio>
+            </article>
+
+            <article>
+                <h3>Elemento de video</h3>
+
+                <p>
+                    La etiqueta video permite integrar contenido
+                    audiovisual con controles de reproducción.
+                </p>
+
+                <video controls width="600">
+                    <source
+                        src="video/video-html.mp4"
+                        type="video/mp4"
+                    >
+
+                    Tu navegador no puede reproducir este video.
+                </video>
+            </article>
+        </section>
+
+        <section id="ventajas">
+            <h2>Ventajas de la estructura HTML5</h2>
+
+            <ul>
+                <li>Organiza mejor el contenido de la página.</li>
+
+                <li>
+                    Permite identificar la función de cada sección.
+                </li>
+
+                <li>
+                    Mejora la accesibilidad para los usuarios.
+                </li>
+
+                <li>
+                    Facilita el mantenimiento del código.
+                </li>
+
+                <li>
+                    Permite incorporar audio, video e imágenes.
+                </li>
+
+                <li>
+                    Ayuda a los navegadores y motores de búsqueda
+                    a interpretar la página.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Creado por Marieangieliz González de Jesús
+        </p>
+
+        <p>
+            Laboratorio de Desarrollo Web — 2026
+        </p>
+
+        <a href="#inicio">
+            Regresar al inicio
+        </a>
+    </footer>
+
+</body>
+
+</html>

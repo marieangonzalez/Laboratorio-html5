@@ -1,0 +1,146 @@
+/* Estilos generales de la página */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+header {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1f4e79;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+nav {
+    background-color: #17365d;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 15px;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #17365d;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+    color: #1f4e79;
+    border-bottom: 2px solid #1f4e79;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #17365d;
+}
+
+a {
+    color: #0b5cad;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #17365d;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
